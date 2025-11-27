@@ -1,0 +1,30 @@
+# Python Dependencies for Data Science Jobs Analysis Project
+
+# Core Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# OpenAI API
+openai>=1.0.0
+
+# Apache Airflow (optional - for orchestration)
+apache-airflow>=2.7.0
+
+# Jupyter Notebook
+jupyter>=1.0.0
+nbconvert>=7.0.0
+
+# Optional: Geocoding (for location analysis)
+geopy>=2.3.0
+
+# Optional: Progress bars
+tqdm>=4.65.0
