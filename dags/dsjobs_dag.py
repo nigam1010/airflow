@@ -22,9 +22,9 @@ args = {
 dag = DAG(
     dag_id='ds_jobs',
     default_args=args,
-    schedule_interval=None
-    #schedule_interval='0 0 28-31 * *',  #run every month end after we have collected enough scraped data
-    #catchup=False,
+    schedule_interval='@daily',  # Run daily at midnight (change to '@weekly' or '0 0 * * 0' for weekly)
+    # schedule_interval='0 0 28-31 * *',  # Uncomment this to run at month end
+    catchup=False,  # Don't run for past dates
 )
 # Define the 4 tasks - Now using Python scripts instead of R
 A = BashOperator(
